@@ -21,10 +21,10 @@ public class Game  {
 		}
 		if(numCommaP==2) {
 			 try {
-				   		Jinxin.xSize = Integer.parseInt(in.substring(0,commaPosPs[0]));
-				   		Jinxin.ySize = Integer.parseInt(in.substring(commaPosPs[0]+1,commaPosPs[1]));
-				   		Jinxin.b = Integer.parseInt(in.substring(commaPosPs[1]+1,in.length()));
-				   		if (Jinxin.xSize*Jinxin.ySize<=Jinxin.b) {
+				   		JX.xSize = Integer.parseInt(in.substring(0,commaPosPs[0]));
+				   		JX.ySize = Integer.parseInt(in.substring(commaPosPs[0]+1,commaPosPs[1]));
+				   		JX.b = Integer.parseInt(in.substring(commaPosPs[1]+1,in.length()));
+				   		if (JX.xSize*JX.ySize<=JX.b) {
 				   			System.out.println("error-too many bombs");
 				   			return false;
 				   		}
@@ -32,7 +32,7 @@ public class Game  {
 					  System.out.println("error-comma but not number(size)\n");
 					  return false;
 				  }
-			 System.out.println("X:"+Jinxin.xSize+"		Y:"+Jinxin.ySize+"		Bomb:"+Jinxin.b);
+			 System.out.println("X:"+JX.xSize+"		Y:"+JX.ySize+"		Bomb:"+JX.b);
 			 return true;
 			 
 		}else{
