@@ -1,7 +1,7 @@
 import java.util.*;
 @SuppressWarnings("unused")
 
-public class Jinxin {
+public class JX {
 
 	public static int xSize, ySize, b;
 
